@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-Validations</title>
+    <style>
+        input{
+            width: 40%;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <form action="/textboxalert.html" onsubmit="return fn()">
+        <input type="text" placeholder="Username" id="uname">
+        <label id="ulabel" style="color: red;visibility: hidden;">Invalid</label>
+        <input type="text" placeholder="Password" id="pword">
+        <label id="plabel" style="color: red;visibility: hidden;">Invalid</label>
+        <label id="p1label" style="color: red;visibility: hidden;">Password shorter than 8 characters</label>
+        <input type="submit">
+    </form>
+</body>
+<script>
+    function fn(){
+        var user= document.getElementById("uname");
+        var pass= document.getElementById("pword");
+        if(user.value.trim()==""){
+            document.getElementById("ulabel").style.visibility="visible";
+            return false
+        }
+        else if(pass.value.trim()==""){
+            document.getElementById("plabel").style.visibility="visible";
+            return false
+        }
+        else if(pass.value.trim().length<8){
+            document.getElementById("p1label").style.visibility="visible";
+            return false
+        }
+        else{
+            return true
+        }
+    }
+</script>
+</html>

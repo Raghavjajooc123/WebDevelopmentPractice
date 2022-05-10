@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade-in,Fade-out using Jquery</title>
+</head>
+<body>
+    <img src="/images/53.jpg" id="img1" style="width: 50px;">
+    <button onclick="fade()">Fade in/out</button>
+</body>
+<script src="/jquery.js"></script>
+<script>
+    function fade(){
+        $("#img1").fadeToggle(800);
+    }
+</script>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All in One</title>
+    <link rel="stylesheet" href="/Javascript_Topics/all_in_one.css">
+    <link rel="stylesheet" href="/jqueryui/jquery-ui.css">
+    <link rel="stylesheet" href="/jqueryui/jquery-ui.structure.css">
+    <link rel="stylesheet" href="/jqueryui/jquery-ui.theme.css">
+</head>
+<body>
+    <div class="form1">
+        <form action="onformsubmit.html" onsubmit="return formvalidate()">
+            <input class="form1items" type="text" name="username" id="user" placeholder="Enter your Username">
+            <label class="invalid" id="invalid1">*Invalid</label>
+            <input class="form1items" type="text" name="email" id="email" placeholder="Enter your Email">
+            <label class="invalid" id="invalid2">*Invalid</label>
+            <input class="form1items" type="text" name="phone" id="phone" placeholder="Enter your phone number">
+            <label class="invalid" id="invalid3">*Invalid</label>
+            <input class="form1items" type="password" name="password" id="pass" placeholder="Enter your password">
+            <label class="invalidpass" id="invalid4">
+                <ul>
+                    <li id="li1">*Invalid </li>
+                    <li id="li2">*Min. 8 Characters Required</li>
+                </ul>
+            </label>
+            <input class="form1submit" type="submit" value="Submit Details">
+        </form>
+    </div>
+    <div class="img1div">
+        <img id="img1" src="/images/59.jpeg">
+        <button onclick="fadeout()">AND I AM IRON MAN</button>
+        <button onclick="fadein()">I AM INEVITABLE</button>
+    </div>
+    <div class="img2div">
+        <img id="img2" src="/images/50.gif">
+        <button id="slidey">Ye Le</button>
+        <button id="slido">Wapis De</button>
+    </div>
+    <div class="square">
+        This is a Movable square
+    </div>
+    <button id="left">Left</button>
+    <button id="center">Center</button>
+    <div class="calc">
+        <h1>Here is a General Calculator</h1>
+        <div class="numbers">
+            <label>Enter First Number:</label>
+            <input type="text" placeholder="Enter Here" id="firstno">
+        </div>
+        <div class="numbers">
+            <label>Enter Second Number:</label>
+            <input type="text" placeholder="Enter Here" id="secondno">
+        </div>
+        <div id="result">
+            Result is
+        </div>
+        <button class="operation" id="add">+</button>
+    </div>
+    <div id="panels">
+        <h2>Date-Time Picker</h2>
+        <div class="explaination">
+           <p>Here is a datetime picker</p> 
+            <input type="text" placeholder="Enter Date Here" id="datetime">
+        </div>
+        <h2>Tooltip-Widget</h2>
+        <div class="explaination">
+            <p>Example of Tooltip-Widget</p>
+            <img src="/images/49.jpg" title="This is the Universe" class="imgt">
+        </div>
+        <h2>AutoComplete Widget</h2>
+        <div class="auto">
+            <p>Enter Your state and We will Try to AutoComplete Your guess</p>
+            <input type="text" id="auto" placeholder="Enter Your State Here">
+        </div>
+        <h2>Resizable Jquery UI</h2>
+        <div class="imgcont">
+            <p>Here is an Example of Resizable Interaction</p>
+            <img src="/images/57.png" class="resizimg">
+        </div>
+        <h2>Draggable Interaction</h2>
+        <div class="drag">
+            <p>Here is an Example of Draggable Interaction</p>
+            <div class="squares">1</div>
+            <div class="squares">2</div>
+        </div>
+        <h2>Sortable Interaction</h2>
+        <div class="sort">
+            <p>Here is an Example of Sortable Interaction</p>
+            <div class="cube">1</div>
+            <div class="cube">2</div>
+            <div class="cube">3</div>
+            <div class="cube">4</div>
+            <div class="cube">5</div>
+        </div>
+    </div>
+    <div class="msg">
+        <h1>Welcome to this Website</h1>
+        <p id="msgp">I am Raghav Jajoo ,Founder of this Website and a student</p>
+        <img src="/images/55.gif" id="msgimg">
+        <div class="msginp">
+            <input type="checkbox" name="idiot" id="idiot">
+            <label>By Clicking here you agree that you are a complete idiot and you have read the <a href="#">Terms and Conditions</a></label>
+        </div>
+    </div>
+</body>
+<script src="/jquery.js"></script>
+<script src="/jqueryui/jquery-ui.js"></script>
+<script src="/Javascript_Topics/all_in_one.js"></script>
+
+</html>

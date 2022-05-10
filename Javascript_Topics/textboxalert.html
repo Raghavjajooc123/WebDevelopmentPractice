@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Textbox ke text ko alert me show karna</title>
+
+    </head>
+    <body>
+        <input type="text" id="user" placeholder="Enter your username">
+        <input type="password" id="password" placeholder="Enter your password">
+        <button onclick="fn()">Submit</button>
+    </body>
+    <script>
+        function fn()
+        {
+            var user = document.getElementById("user").value
+            var pass = document.getElementById("password").value;
+            if(user==pass)
+            {
+                alert("you have entered the correct values");
+            }
+            else
+            {
+                alert("you have entered the Wrong values");
+            }
+        }
+        </script>
+</html>
