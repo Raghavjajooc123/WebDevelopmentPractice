@@ -1,0 +1,11 @@
+.contain{
+    border: 1px solid red;
+    height: 1200px;
+}
+.ro{
+    border: 1px solid blue;
+}
+.co{
+    border: 2px solid greenyellow;
+    height: 30px;
+}
